@@ -1,0 +1,19 @@
+n=int(input())
+two=1
+three=1
+five=1
+ugly=[1]
+while len(ugly)<n:
+    s=[two*2,three*3,five*5]
+    minimum=min(s)
+    ugly.append(minimum)
+    ugly=sorted(list(set(ugly)))
+    j=s.index(minimum)
+    if(j==0):
+        two+=1
+    elif(j==1):
+        three+=1
+    else:
+        five+=1
+print(ugly)
+print(ugly[-1])
