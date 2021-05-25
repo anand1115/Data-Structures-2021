@@ -10,7 +10,7 @@ for i in k:
     elif(i==')'):
         while stack and stack[-1]!="(":
             op.append(stack.pop())
-        stack.pop()     
+        stack.pop()  
     else:
         while stack and operators[stack[-1]]>=operators[i]: #here is the change for infix to prefix
             op.append(stack.pop())
