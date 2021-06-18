@@ -1,0 +1,103 @@
+what is data?
+It is charcter,quntities or symbol on which we can perform operations by using computer.so that it can be stored and tarnsfred in the form of electric signals and recored on the magnetic tapes and many more.
+what is data structure?
+A.Data structure is a technique or methodology for efficient organization and modification of data.It is how a data or collection of data can be represnted logicallay and can perform sevaral operations on data efficeintly.
+Ds can be used to perform following operations efficiently.
+1.storing
+2.retieving
+3.modifying
+4.deleting
+5.searching
+6.sorting 
+7.indexing
+Eg:-array..
+array is data structure which can used to store the multiple data of same type.
+in order to represnt the data of same type in multiple times,we have to use the multiple varible..insted of that we can array to store multiple values of same datatype into sing le variable..
+array datastructure is also used to store the images..
+so that we can perform various operations efficiently.
+Appplications :-
+1.it can used in database implementaion using B-tree
+2.Compliler implementation
+3.Artifiacila intellegence.
+4.develop the relationship in realword using graphs
+5.image processing and speech proceesing.
+
+what is datatype?
+a datatype is a collection data by which we can get to know what is the type of value and what type of operations we can perform on the data. 
+there basically two types of datatypes.
+1.User defined data type.-->can be defined by the user.
+2.Built-in data type.-->already defined by the compiler.
+What is Abstrct Data type?
+Abstract data type is a user defined data type which specifies the operations on values by using the functions so that it hides the internal implementations and highlights the serivice by function name.. 
+-->it provides abstraction for the user.
+eg:- stack
+stack is ADT which shows the operation like push(),pop(),peek() to perform the operations but hides the internal implementation.
+Why we need ADT?
+basiclly ther are two types of programs..
+1.Client program-->it is a program which is uses the data structure. Eg:-interface
+2.implementation program-->which implements the data structure.
+for every real world applications there is need of interface where user can access the all features that can be implemneted as ADT.
+An ADT can be implemented using the Data structure.
+Advantages of data structure:
+-----------------------------
+->Efficiency:-proper selction of data structure will make the program in terms of efficiency in time and space.
+->reusability:-one implemnetation can used in multiple times whenever we need.
+->abstraction:-Adt can be implemented by using the data structure so that it can be implemented as client program.
+Types of data structure :-
+-------------------------
+data structures are classified based on the arrangement of data and allocation memory.
+based on arrangement of the data.there od two types..
+1.linear data structures.
+linear data structures is a type of data structure in which data is arranged in linear or sequential order.
+it is type of data structure in which the data elements can atmost have one predessosor and one successor.
+Eg:-array,linked list,stack and queue.
+2.Non-linear data structure:-
+--------------------------
+Non-linera data structure is a type of data structre in which the data elements are stored in non linear way.
+it is a type of data structure in which the data elememts can have any number of predessors and successor.
+Eg :-Tree,Graph etc.
+Based on the allocting time there are two types of data structures.
+1.static data structures.
+in this type of data structures, memory is allocted at compile time.so the size of data structure is fixed.
+advantage accessebility is fast.
+insertion and delition is slow.
+once the arry is full..we can't resize it,,,if we want to resize it we have to cretae new arry of new size and have to copy all the data to new one...it is inefficient method
+2.dynamic data strucures.
+in this type of datastructure memory for the data is allocated at run time...so its size is not fixed..we can increse its size as per our requirement.
+advantage is fast insertion and deltion..
+--------
+we know that data structure is defined as orgainiseing the data in efficient way..
+so the efficienncy can be measured in terms of Time and space.
+based on the taken for particular operation,,we can comapre the different data structures.
+for example,for array insertion will take o(n) time and linked list will take o(1) time..
+so for insertion based problems we can use linked list because it takes less time.
+Asymptotic Analysis
+===================
+we know that by using time complexity we can compare the performance of data structure.
+how to find the time complexity?
+there are basically two ways to find the complexity of a program.
+1.Finding exact time 
+2.asymptotic analysis.
+if we find the exact time by using timer,we can get the time taken by the data structre,but it has some disadvantages..
+->the time taken by the program will vary from one input to other.
+->the time taken by the program may vary form one machine to other machine..
+so,measuring time complesity in this way is not prefferable.
+So we have to follow another method,i.e..
+we know that the time taken by the program depends up on the size of input that we are giving.
+so the time complexity of a data structure can be measured in terms of size of input.
+suppose n is size of the input,then the function f(n) denotes that the time complesxity of a program.
+in other words,we can say that the,,the function f(n) denote that the number of insruction that can be executed in given input value n.
+if we take growth rate (f(n) vs n),,it may ary from small input too large input..
+so,we are taking the maximum order from f(n) which gives the  approximate complexity of a program.
+this approximate measure of time complexity is known as asymptotic analysyis..
+Big O Notation 
+--------------
+It gives the perforamance of any algorithm by providing the order pf growth rate function.
+It gives the upper bound of function such the it shows that function will never grow up than the upper bound.
+it gives approximate time complecity of a program.
+for functions f(n) and g(n) 
+f(n)=O(g(n)) such that bu satifying the constatnts c and n0
+f(n)<=c.g(n) for all n>=n0
+f(n) will never grow faster than the g(n)
+BIG O notation will tell how worst an algorithm can perform.
+
