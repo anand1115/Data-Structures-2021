@@ -1,4 +1,3 @@
-from collections import defaultdict
 def graph(nodes,k,n):
     temp=[]
     for i in range(n-1,-1,-1):
@@ -6,7 +5,6 @@ def graph(nodes,k,n):
             if(abs(i-j)<=k and nodes[i]>nodes[j]):
                 temp.append((i,j,1))
     return temp
-
 def floyd_warshall(n,edges):
     distance={i:{j:float("inf") if i!=j else 0  for j in range(n)} for i in range(n)}
     for i,j,v in edges:
